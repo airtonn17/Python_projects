@@ -33,3 +33,6 @@ print(nome, "tem", idade, "anos")
 Cast é a "conversão" de um tipo de dado para outro.
 """
 print(f"{nome} nasceu em {2024 - idade} anos")
+
+# É possivel fazer dupla atribuição
+valor1, valor2 = 1, 44
