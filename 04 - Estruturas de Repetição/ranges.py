@@ -27,16 +27,16 @@ OBS: valor_de_parada não inclusive (início especificado pelo usuário, e passo
 
 """
 # Exemplo Forma 1
-# for numero in range(11): # 0 ao 10
-#     print(numero)
+for numero in range(11): # 0 ao 10
+    print(numero)
 
 # Exemplo Forma 2
-# for numero in range (1,11): # 1 ao 10
-#     print(numero)
+for numero in range (1,11): # 1 ao 10
+    print(numero)
 
 # Exemplo Forma 3
-# for numero in range(1, 10, 2): # 1, 3, 5, 7, 9
-#     print(numero)
+for numero in range(1, 10, 2): # 1, 3, 5, 7, 9
+    print(numero)
 
 # Exemplo Forma 4
 for numero in range(10,0,-1): # Contagem ivertida - Do 10 ao 1
