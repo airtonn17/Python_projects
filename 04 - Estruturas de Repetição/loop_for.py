@@ -75,3 +75,4 @@ OBS: O valor final não é incluso.
 for _ in range(3):
     for num in range(1,11):
         print('\U0001F63B' * num ) # Imprimir Emoji, troca o '+' por '000'
+
