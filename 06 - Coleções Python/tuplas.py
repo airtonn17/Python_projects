@@ -123,16 +123,16 @@ print(meses)
 # * Isso porque trabalhar com elementos imutáveis traz mais segurança para o código.
 
 # Copiando uma tupla para outra
-tupla = (1, 2, 3)
-print(tupla)
-
-nova = tupla # Na tup´la não temos o problema de Shallow Copy
-
-print(nova)
-print(tupla)
-
-outra = (4, 5, 6)
-nova = nova+ outra
-
-print(nova)
-print(tupla)
+# tupla = (1, 2, 3)
+# print(tupla)
+#
+# nova = tupla # Na tup´la não temos o problema de Shallow Copy
+#
+# print(nova)
+# print(tupla)
+#
+# outra = (4, 5, 6)
+# nova = nova+ outra
+#
+# print(nova)
+# print(tupla)
