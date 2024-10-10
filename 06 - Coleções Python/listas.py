@@ -130,3 +130,166 @@ Para adicionar elementos em lista, ultilizamos a função apend
 # curso = ' '.join(lista6)
 # print(curso)
 
+# Podemos realmente colocar qualquer tipo de dado em uma lista, inclusive misturando esses dados
+# lista6 = [1, 2.34, True, 'Python', 'd', [1, 2, 3], 45345345345]
+# print(lista6)
+# print(type(lista6))
+
+# Iterando sobre listas
+
+# Exemplo 1 - Utilizando for
+# soma = 0
+# for elemento in lista1:
+#     print(elemento)
+#     soma = soma + elemento
+# print(soma)
+
+# Exemplo 2 - Utilizando while
+# carrinho = []
+# produto = ''
+# while produto != 'sair':
+#     produto = input("Adicione um produto na lista ou digite 'sair' para sair: ")
+#     if produto != 'sair':
+#         carrinho.append(produto)
+#
+# for produto in carrinho:
+#     print(produto)
+
+# Ultilizando variáveis em listas
+# numeros = [1, 2, 3, 4, 5]
+# print(numeros)
+#
+# num1 = 1
+# num2 = 2
+# num3 = 3
+# num4 = 4
+# num5 = 5
+# numeros = [num1, num2, num3, num4, num5]
+# print(numeros)
+
+# Fazemos acesso aos elementos de forma indexada
+#           0         1         2        3
+# cores = ['verde', 'amarelo', 'azul', 'branco']
+#
+# print(cores[0]) # verde
+# print(cores[1]) # amarelo
+# print(cores[2]) # azul
+# print(cores[3]) # branco
+#
+# # Fazer acesso aos elementos de forma indexada inversa
+# # O final de um elemento está ligado ao início da lista
+# print(cores[-1]) # brando
+# print(cores[-2]) # brando
+# print(cores[-3]) # brando
+# print(cores[-4]) # brando
+# # print(cores[-5]) # Erro, pois não existe índice -5
+
+# Gerar índice em um for
+# for indice, cor in enumerate(cores):
+#     print(indice, cor)
+
+# Listas aceitam valores repetidos
+# lista = []
+# lista.append(42)
+# lista.append(42)
+# lista.append(33)
+# lista.append(33)
+# lista.append(42)
+# print(lista)
+
+# Outros métodos não tão importantes, mas também uteis
+
+# #encontrar o índice de um elemento na lista
+# numeros = [5, 6, 7, 5, 8, 9, 10]
+# # Em qual índice da lista está o valor 6?
+# print(numeros.index(6))
+#
+# # OBS: Retorna o ídice do primeiro elemento encontrado
+# print(numeros.index(5))
+#
+# # Podemos fazer busca dento de um range, ou seja, de qual índice começar a buscar
+# print(numeros.index(5, 1)) # Buscando a partir do índice 1
+#
+# # Podemos fazer busca dento de um range, início/fim
+# print(numeros.index(8, 3, 6)) # Busca o índice do valor 8, entre os índices 3 a 6.
+
+# Revisão de Slicing
+# lista[inicio:fim:passo]
+# range(início:fim:passo]
+
+# Trabalhando com slice de lista com o parâmetro 'início'
+# lista = [1, 2, 3, 4]
+# print(lista[1:]) # Iniciando do índice 1 e pegando todos os índices restantes
+#
+# # Trabalhando com slice de lista com o parâmetro 'fim'
+# print(lista[:2]) # Começa em 0 e pega até o índice 2 - 1
+# print(lista[1:4]) # Começa em 1 e pega até o índice 4 - 1
+#
+# # Trabalhando com slice de lista com o parâmetro 'passo'
+# print(lista[::2]) # Começa em 0, vai até o final de 2 em 2
+
+# Invertendo valores em uma lista
+# nomes = ['Python', 'Project']
+# nomes.reverse()
+# print(nomes)
+
+# Soma, #Valor Máximo, Valor Mínimo, Tamanho
+# * Se os valores forem todos inteiros ou reais
+
+# lista = [1, 2, 3, 4, 5, 6]
+# print(sum(lista)) # Soma
+# print(max(lista)) # Máximo valor
+# print(min(lista)) # Mínimo valor
+# print(len(lista)) # Tamamho da lista
+
+# Transformar uma lista em Tupla
+# lista = [1, 2, 3, 4, 5, 6]
+# print(lista)
+# print(type(lista))
+#
+# tupla = tuple(lista)
+# print(tupla)
+# print(type(tupla))
+
+# Desempacotamento de listas
+
+# lista = [1, 2, 3]
+# num1, num2, num3 = lista
+# print(num1)
+# print(num2)
+# print(num3)
+
+# OBS: Se tivermos um número diferente de elementos na lista ou variáveis para receber os dados, teremos ValueError.
+
+# Copiando uma lista para outra (Shallow Copy e Deep Copy)
+
+# Forma 1 - Shallow Copy
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista # Cópia
+print(nova)
+
+nova.append(4)
+print(lista)
+print(nova)
+ # Utilizamos a cópia via atribuição e copiamos os dados da lista para a nova lista
+ # mas após realizar a modificação em uma das listas, essa modificação se refletiu em ambas as listas
+ # Isso em Python é chamado de Sallow Copy.
+
+# Forma 2 - Deep Copy
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista.copy() # Cópia
+print(nova)
+
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# Ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista,
+# mas elas ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra
+# Em Python, isso é chamado de Deep Copy (cópia profunda)
+
