@@ -296,4 +296,3 @@ print(nova)
 # Em Python, isso é chamado de Deep Copy (cópia profunda)
 
 
-
