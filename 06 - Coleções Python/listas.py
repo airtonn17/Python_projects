@@ -20,7 +20,17 @@ litsa3 = []
 lista4 = list(range(11))
 lista5 = list('Pytho Project')
 
-# Podemos facilmente checar se determinado valor está contido na lista
+"""
+ Buscar Elementos na lista
+"""
+# if [8, 3, 1] in lista1:
+#     print('Encontrei a lista')
+# else:
+#     print('Não encontrei a lista')
+
+"""
+ Podemos facilmente checar se determinado valor está contido na lista
+"""
 # num = 7
 
 # if num in lista4:
@@ -28,47 +38,55 @@ lista5 = list('Pytho Project')
 # else:
 #     print(f'Não encontrei o número {num}')
 
-# Podemos facilmente ordenar uma lista
+"""
+ Ordenar uma lista
+"""
 # lista1.sort()
 # print(lista1)
 
-# Podemos facilmente contar o número de ocorrências de um valor em uma lista.
+"""
+ Contar o número de ocorrências de um valor em uma lista.
+"""
 # print(lista1.count(1))
 # print(lista5.count('t'))
 
-# Adicionar elementos em listas
 """
-Para adicionar elementos em lista, ultilizamos a função apend
+ Adicionar elementos em lista
 """
+# Forma 1 - Apend
+# OBS: Com o append nós só conseguimos adicionar 1 elemento por vez
+
 # print(lista1)
 # lista1.append(42)
 # print(lista1)
 
-# OBS: Com o append nós só conseguimos adicionar 1 elemento por vez
 # lista1.append(12, 34, 56) # Erro
 
 # lista1.append([8, 3, 1]) # Adiciona uma lista como elemento único (sub lista)
 # print(lista1)
 
-# if [8, 3, 1] in lista1:
-#     print('Encontrei a lista')
-# else:
-#     print('Não encontrei a lista')
+# Forma 2 - Extend
+# OBS: Adiciona cada elemento na lista como valor adicional a lista
 
-# lista1.extend([123, 44, 67]) # Adiciona cada elemento na lista como valor adicional a lista
+# lista1.extend([123, 44, 67])
 # print(lista1)
 
-# Podemos inserir um no elemento na lista informando a posição do índice
-# Isso não substitue o valor inicial. O mesmo será deslocado para a direita da lista.
+"""
+ Inserir um novo elemento na lista informando a posição do índice
+"""
+# OBS: Isso não substitue o valor inicial. O mesmo será deslocado para a direita da lista.
 # lista1.insert(2, 'novo valor')
 # print(lista1)
 
-# Podemos facilmente junstar duas listas
+"""
+ Juntar duas listas
+"""
 # lista6 = lista1 + lista2
 # print(lista6)
 
-# Podemos facilmente inverter uma lista
-
+"""
+ Inverter uma lista
+"""
 # Forma 1
 # lista1.reverse()
 # lista2.reverse()
@@ -79,38 +97,53 @@ Para adicionar elementos em lista, ultilizamos a função apend
 # print(lista1[::-1])
 # print(lista2[::-1])
 
-# Copiar uma lista
+"""
+ Copiar uma lista
+"""
 # lista6 = lista2.copy()
 # print(lista6)
 
-#Podemos contar quantos elementos existem dentro da lista
+"""
+ Contar quantos elementos existem dentro da lista
+"""
 # print(len(lista1))
 
-# Podemos remover facilmente o último elemento de uma lista
-# O pop não somente remove o último elemento, mas também o retorna
+"""
+ Remover o último elemento de uma lista
+"""
+# OBS: O pop não somente remove o último elemento, mas também o retorna
+
 # print(lista5)
 # lista5.pop()
 # print(lista5)
 
 # Podemos remover um elemento pelo índice
+
 # OBS: Os elementos serão descocados para a esquerda.
 # OBS: Se não houver elemento no índice informado, teremos o erro IndexError.
 # lista5.pop(2)
 # print(lista5)
 
-# Podemos remover todos os elementos (zerar a lista)
+"""
+ Remover todos os elementos (zerar a lista)
+"""
 # print(lista5)
 # lista5.clear()
 # print(lista5)
 
-# Podemos facilmente repetir elementos em uma lista
+"""
+ Repetir elementos em uma lista
+"""
 # nova = [1, 2, 3]
 # print(nova)
 # nova = nova * 3
 # print(nova)
 
-# Podemos facilmente converter uma String para uma lista
+"""
+ Converter uma String para uma lista
+"""
 # Exemplo 1
+
 # curso = 'Pytho Project Airton Cavalcante'
 # print(curso)
 # curso = curso.split()
@@ -119,27 +152,34 @@ Para adicionar elementos em lista, ultilizamos a função apend
 #OBS: Por padrão o split separa os elementos da lista pelo espaço entre elas.
 
 # Exemplo 2
+
 # curso = 'Python,Project,Airton,Cavalcante'
 # print(curso)
 # curso = curso.split(',') # Definindo uma String como separador
 # print(curso)
 
-# Convertendo uma lista em uma String
+"""
+ Convertendo uma lista em uma String
+"""
 # lista6 = ['Python', 'Project', 'Airton', 'Cavalcante']
 # print(lista6)
 
-# Adiciona espaço entre cada elemento na lista e transforma em uma String
+## Adiciona espaço entre cada elemento na lista e transforma em uma String
 # curso = ' '.join(lista6)
 # print(curso)
 
-# Podemos realmente colocar qualquer tipo de dado em uma lista, inclusive misturando esses dados
+"""
+ Podemos realmente colocar qualquer tipo de dado em uma lista, inclusive misturando esses dados
+"""
 # lista6 = [1, 2.34, True, 'Python', 'd', [1, 2, 3], 45345345345]
 # print(lista6)
 # print(type(lista6))
 
-# Iterando sobre listas
-
+""""
+ Iterando sobre listas
+"""
 # Exemplo 1 - Utilizando for
+
 # soma = 0
 # for elemento in lista1:
 #     print(elemento)
@@ -147,6 +187,7 @@ Para adicionar elementos em lista, ultilizamos a função apend
 # print(soma)
 
 # Exemplo 2 - Utilizando while
+
 # carrinho = []
 # produto = ''
 # while produto != 'sair':
@@ -157,7 +198,9 @@ Para adicionar elementos em lista, ultilizamos a função apend
 # for produto in carrinho:
 #     print(produto)
 
-# Ultilizando variáveis em listas
+"""
+ Ultilizando variáveis em listas
+"""
 # numeros = [1, 2, 3, 4, 5]
 # print(numeros)
 #
@@ -169,8 +212,10 @@ Para adicionar elementos em lista, ultilizamos a função apend
 # numeros = [num1, num2, num3, num4, num5]
 # print(numeros)
 
-# Fazemos acesso aos elementos de forma indexada
-#           0         1         2        3
+"""
+ Fazemos acesso aos elementos de forma indexada
+"""
+##           0         1         2        3
 # cores = ['verde', 'amarelo', 'azul', 'branco']
 #
 # print(cores[0]) # verde
@@ -181,16 +226,18 @@ Para adicionar elementos em lista, ultilizamos a função apend
 # # Fazer acesso aos elementos de forma indexada inversa
 # # O final de um elemento está ligado ao início da lista
 # print(cores[-1]) # brando
-# print(cores[-2]) # brando
-# print(cores[-3]) # brando
-# print(cores[-4]) # brando
+# print(cores[-2]) # azul
+# print(cores[-3]) # amarelo
+# print(cores[-4]) # verde
 # # print(cores[-5]) # Erro, pois não existe índice -5
 
-# Gerar índice em um for
+"""
+ Gerar índice em um for
+"""
 # for indice, cor in enumerate(cores):
 #     print(indice, cor)
 
-# Listas aceitam valores repetidos
+## Listas aceitam valores repetidos
 # lista = []
 # lista.append(42)
 # lista.append(42)
