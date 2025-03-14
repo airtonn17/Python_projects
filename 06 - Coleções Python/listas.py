@@ -295,4 +295,3 @@ print(nova)
 # mas elas ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra
 # Em Python, isso é chamado de Deep Copy (cópia profunda)
 
-
