@@ -232,8 +232,11 @@ lista5 = list('Pytho Project')
 # # print(cores[-5]) # Erro, pois não existe índice -5
 
 """
-Gerar índice em um for
+ Gerar índice em um for
 """
+##           0         1         2        3
+# cores = ['verde', 'amarelo', 'azul', 'branco']
+
 # for indice, cor in enumerate(cores):
 #     print(indice, cor)
 
