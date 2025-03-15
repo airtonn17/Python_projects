@@ -41,30 +41,38 @@ from operator import index
 # 4, -> é tupla
 
 """
-# Podemos gerar uma tupla dinamicamente com range(início,fim,passo)
+# Tupla com range (início,fim,passo)
 """
 # tupla = tuple(range(11))
 # print(tupla)
 # print(type(tupla))
 
-# Desempacotamento de tuplas
+"""
+# Desempacotamento de tupla
+"""
 # tupla = ('Python Project', 'Airton Cavalcante')
 # projeto, aluno = tupla
 # print(projeto)
 # print(aluno)
-# Gera erro (ValueError) se colocarmos um numero diferente de elementos para desempacotar.
+# # Gera erro (ValueError) se colocarmos um numero diferente de elementos para desempacotar.
 
+"""
 # Métodos para adição e remoção de elementos nas tuplas não existem, dado o fato das tuplas serem imutáveis.
+"""
 
-# Soma*, Valor Máximo*, Valor Mínimo*, Tamanho
-# * Se os valores forem todos inteiros ou reais.
+"""
+# # Soma*, Valor Máximo*, Valor Mínimo*, Tamanho
+"""
+# # Se os valores forem todos inteiros ou reais.
 # tupla = (1, 2, 3, 4, 5, 6)
-# print(sum(tupla))
-# print(max(tupla))
-# print(min(tupla))
-# print(len(tupla))
+# print(sum(tupla)) # 21
+# print(max(tupla)) # 6
+# print(min(tupla)) # 1
+# print(len(tupla)) # 6
 
+"""
 # Concatenação de tuplas
+"""
 # tupla1 = (1, 2, 3)
 # print(tupla1)
 #
@@ -76,14 +84,25 @@ from operator import index
 # print(tupla1)
 # print(tupla2)
 #
+# tupla3 = tupla1 + tupla2
+#
+# print(tupla3)
+# print(tupla1)
+# print(tupla2)
+#
 # tupla1 = tupla1 + tupla2 # Tuplas são imutáveis, mas podemos sobrescrever seus valores.
 # print(tupla1)
 
+"""
 # Verificar se determinado elemento está contido na tupla
+"""
 # tupla = (1, 2, 3)
-# print(33 in tupla)
+# print(3 in tupla) #True
+# print(33 in tupla) #False
 
+"""
 # Iterando sobre uma tupla
+"""
 # tupla = (1, 2, 3)
 # for n in tupla:
 #     print(n)
@@ -91,7 +110,9 @@ from operator import index
 # for i, valor in enumerate(tupla):
 #     print(i, valor)
 
+"""
 # Contando elementos dentro de uma tupla
+"""
 # tupla = ('a', 'b', 'c', 'd', 'e', 'a', 'b')
 # print(tupla.count('a'))
 #
@@ -99,30 +120,39 @@ from operator import index
 # print(projeto)
 # print(projeto.count('o'))
 
+"""
 # Dicas na utilização de tuplas
-# Devemos utilizar tuplas sempre que não precisarmos modificar os dados contidos em uma coleção
-# Exemplo 1
-# meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outrubo', 'Novembro', 'Dezembro')
-# print(meses)
+"""
+# # Devemos utilizar tuplas sempre que não precisarmos modificar os dados contidos em uma coleção
+#
+# meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+# # print(meses) # AttributeError
 
-# O acesso de elementos em uma tupla também é semelhante a de uma lista
-# print(meses[5])
+"""
+# Acesso de elementos em uma tupla
+"""
+# meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+# print(meses[5]) # Junho
 #
 # # Iterar com while
 # i = 0
 # while i < len(meses):
 #     print(meses[i])
 #     i = i + 1
+#
+# # Verificamos em qual índice um elemento está na tupla
+# print(meses.index('Junho')) # 5
 
-# Verificamos em qual índice um elemento está na tupla
-# print(meses.index('Junho'))
-
+"""
 # Slicing
-# tupal[inicio,fim,passo]
-# print(meses[::2])
+"""
+# meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+# # tupal[inicio,fim,passo]
+# print(meses[::2]) # ('Janeiro', 'Março', 'Maio', 'Julho', 'Setembro', 'Novembro')
 
+"""
 # Por quê utilizar tuplas?
-
+"""
 # - Tuplas são mais rápidas do que listas.
 # - Tuplas deixam seu código mais seguro*.
 
