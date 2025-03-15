@@ -254,7 +254,7 @@ lista5 = list('Pytho Project')
 """
 # Outros métodos não tão importantes, mas também uteis
 """
-# Encontrar o índice de um elemento na lista
+# # Encontrar o índice de um elemento na lista
 #
 # numeros = [5, 6, 7, 5, 8, 9, 10]
 # # Em qual índice da lista está o valor 6?
@@ -263,12 +263,14 @@ lista5 = list('Pytho Project')
 #
 # # OBS: Retorna o ídice do primeiro elemento encontrado, caso haja dois iguais
 
-# Buscar dento de um range, ou seja, de qual índice começar a buscar
-#
+# # Buscar dento de um range, ou seja, de qual índice começar a buscar
+# numeros = [5, 6, 7, 5, 8, 9, 10]
 # print(numeros.index(5, 1)) # Buscando a partir do índice 1
+# índice 3
 #
 # # Podemos fazer busca dento de um range, início/fim
 # print(numeros.index(8, 3, 6)) # Busca o índice do valor 8, entre os índices 3 a 6.
+# índice 4
 
 # Revisão de Slicing
 # lista[inicio:fim:passo]
