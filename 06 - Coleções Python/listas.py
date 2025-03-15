@@ -241,7 +241,7 @@ lista5 = list('Pytho Project')
 #     print(indice, cor)
 
 """
-## Listas aceitam valores repetidos
+# Listas aceitam valores repetidos
 """
 # lista = []
 # lista.append(42)
@@ -272,22 +272,34 @@ lista5 = list('Pytho Project')
 # print(numeros.index(8, 3, 6)) # Busca o índice do valor 8, entre os índices 3 a 6.
 # índice 4
 
-# Revisão de Slicing
-# lista[inicio:fim:passo]
-# range(início:fim:passo]
-
-# Trabalhando com slice de lista com o parâmetro 'início'
+"""
+# Slicing
+"""
+# # lista[inicio:fim:passo]
+# # range(início:fim:passo]
+#
+# # Parâmetro 'início'
 # lista = [1, 2, 3, 4]
 # print(lista[1:]) # Iniciando do índice 1 e pegando todos os índices restantes
+# # [2, 3, 4]
 #
-# # Trabalhando com slice de lista com o parâmetro 'fim'
-# print(lista[:2]) # Começa em 0 e pega até o índice 2 - 1
-# print(lista[1:4]) # Começa em 1 e pega até o índice 4 - 1
+# # Parâmetro 'fim'
+# print(lista[:2]) # Começa no índice 0 e pega até o índice 2 - 1
+# # [1, 2]
+# print(lista[1:3]) # Começa no índice 1 e pega até o índice 3 - 1
+# # [2, 3]
 #
-# # Trabalhando com slice de lista com o parâmetro 'passo'
-# print(lista[::2]) # Começa em 0, vai até o final de 2 em 2
+# # Parâmetro 'passo'
+# print(lista[::2]) # Começa no índice 0, vai até o final de 2 em 2
+# # [1, 3]
+#
+# # Inverter String
+# nome = 'Programação em Phyton'
+# print(nome[::-1])
 
+"""
 # Invertendo valores em uma lista
+"""
 # nomes = ['Python', 'Project']
 # nomes.reverse()
 # print(nomes)
