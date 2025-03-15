@@ -231,6 +231,7 @@ lista5 = list('Pytho Project')
 # print(cores[-4]) # verde
 # # print(cores[-5]) # Erro, pois não existe índice -5
 
+
 """
  Gerar índice em um for
 """
