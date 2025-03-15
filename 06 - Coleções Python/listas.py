@@ -331,40 +331,46 @@ lista5 = list('Pytho Project')
 """
 # lista = [1, 2, 3]
 # num1, num2, num3 = lista
+#
 # print(num1)
 # print(num2)
 # print(num3)
+#
+# # OBS: Se tivermos um número diferente de elementos na lista ou variáveis para receber os dados, teremos ValueError.
 
-# OBS: Se tivermos um número diferente de elementos na lista ou variáveis para receber os dados, teremos ValueError.
-
+"""
 # Copiando uma lista para outra (Shallow Copy e Deep Copy)
-
-# Forma 1 - Shallow Copy
-lista = [1, 2, 3]
-print(lista)
-
-nova = lista # Cópia
-print(nova)
-
-nova.append(4)
-print(lista)
-print(nova)
- # Utilizamos a cópia via atribuição e copiamos os dados da lista para a nova lista
- # mas após realizar a modificação em uma das listas, essa modificação se refletiu em ambas as listas
- # Isso em Python é chamado de Sallow Copy.
-
-# Forma 2 - Deep Copy
-lista = [1, 2, 3]
-print(lista)
-
-nova = lista.copy() # Cópia
-print(nova)
-
-nova.append(4)
-
-print(lista)
-print(nova)
-
-# Ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista,
-# mas elas ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra
-# Em Python, isso é chamado de Deep Copy (cópia profunda)
+"""
+# # Forma 1 - Shallow Copy
+#
+# lista = [1, 2, 3]
+# print(lista) # [1, 2, 3]
+#
+# nova = lista # Cópia
+# print(nova) # [1, 2, 3]
+#
+# nova.append(4) # Adiciona o numero 4 na lista 'nova'
+#
+# print(lista) # [1, 2, 3, 4]
+# print(nova) # [1, 2, 3, 4]
+#
+# # Utilizamos a cópia via atribuição e copiamos os dados da lista para a nova lista
+# # mas após realizar a modificação em uma das listas, essa modificação se refletiu em ambas as listas
+# # Isso em Python é chamado de Sallow Copy.
+#
+# # Forma 2 - Deep Copy
+#
+# lista = [1, 2, 3]
+# print(lista) # [1, 2, 3]
+#
+# nova = lista.copy() # Cópia
+# print(nova)  # [1, 2, 3]
+#
+# nova.append(4)
+#
+# print(lista) # [1, 2, 3]
+# print(nova) # [1, 2, 3, 4]
+#
+# # Ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista,
+# # mas elas ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra
+# # Em Python, isso é chamado de Deep Copy (cópia profunda)
