@@ -304,16 +304,20 @@ lista5 = list('Pytho Project')
 # nomes.reverse()
 # print(nomes)
 
-# Soma, #Valor Máximo, Valor Mínimo, Tamanho
-# * Se os valores forem todos inteiros ou reais
-
+"""
+# Soma, Valor Máximo, Valor Mínimo, Tamanho
+"""
+# # Se os valores forem todos inteiros ou reais
+#
 # lista = [1, 2, 3, 4, 5, 6]
-# print(sum(lista)) # Soma
-# print(max(lista)) # Máximo valor
-# print(min(lista)) # Mínimo valor
-# print(len(lista)) # Tamamho da lista
+# print(sum(lista)) # Soma = 21
+# print(max(lista)) # Máximo valor = 6
+# print(min(lista)) # Mínimo valor = 1
+# print(len(lista)) # Tamamho da lista = 6
 
-# Transformar uma lista em Tupla
+"""
+# Converter Lista em Tupla
+"""
 # lista = [1, 2, 3, 4, 5, 6]
 # print(lista)
 # print(type(lista))
@@ -322,8 +326,9 @@ lista5 = list('Pytho Project')
 # print(tupla)
 # print(type(tupla))
 
+"""
 # Desempacotamento de listas
-
+"""
 # lista = [1, 2, 3]
 # num1, num2, num3 = lista
 # print(num1)
