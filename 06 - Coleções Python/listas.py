@@ -240,7 +240,9 @@ lista5 = list('Pytho Project')
 # for indice, cor in enumerate(cores):
 #     print(indice, cor)
 
+"""
 ## Listas aceitam valores repetidos
+"""
 # lista = []
 # lista.append(42)
 # lista.append(42)
@@ -249,17 +251,20 @@ lista5 = list('Pytho Project')
 # lista.append(42)
 # print(lista)
 
+"""
 # Outros métodos não tão importantes, mas também uteis
-
-# #encontrar o índice de um elemento na lista
+"""
+# Encontrar o índice de um elemento na lista
+#
 # numeros = [5, 6, 7, 5, 8, 9, 10]
 # # Em qual índice da lista está o valor 6?
-# print(numeros.index(6))
+# print(numeros.index(6)) # índice 1
+# print(numeros.index(5)) # índice 0
 #
-# # OBS: Retorna o ídice do primeiro elemento encontrado
-# print(numeros.index(5))
+# # OBS: Retorna o ídice do primeiro elemento encontrado, caso haja dois iguais
+
+# Buscar dento de um range, ou seja, de qual índice começar a buscar
 #
-# # Podemos fazer busca dento de um range, ou seja, de qual índice começar a buscar
 # print(numeros.index(5, 1)) # Buscando a partir do índice 1
 #
 # # Podemos fazer busca dento de um range, início/fim
