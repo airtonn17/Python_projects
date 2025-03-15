@@ -1,7 +1,7 @@
 """
 Tuplas (tuple)
 
-Tplas são bastante parecidas com listas
+Tuplas são bastante parecidas com listas
 
 Existem basicamente duas diferenças
 
@@ -12,7 +12,7 @@ Toda operação em uma tupla, gera uma nova tupla.
 """
 from operator import index
 
-# CUIDADO 1: As tuplas são representadas por parênteses (), mas veja:
+# # CUIDADO 1: As tuplas são representadas por parênteses (), mas veja:
 # tupla1 = (1, 2, 3, 4, 5, 6)
 # print(tupla1)
 # print(type(tupla1))
@@ -21,7 +21,7 @@ from operator import index
 # print(tupla2)
 # print(type(tupla2))
 #
-# # VUIDADO 2: Tuplas com 1 elemento
+# # CUIDADO 2: Tuplas com 1 elemento
 # tupla3 = (4) # Isso não é uma tupla!
 # print(tupla3)
 # print(type(tupla3))
@@ -33,10 +33,16 @@ from operator import index
 # tupla5 = 4, # Isso é uma tupla!
 # print(tupla5)
 # print(type(tupla5))
+#
+# # CONCLUSÃO: Podemos concluir que tuplas são definidas por vírgulas e não pelo uso do parênteses.
+#
+# (4) -> Não é tupla
+# (4,) -> é tupla
+# 4, -> é tupla
 
-# CONCLUSÃO: Podemos concluir que tuplas são definidas por vírgulas e não pelo uso do parênteses.
-
-#Podemos gerar uma tupla dinamicamente com range(início,fim,passo)
+"""
+# Podemos gerar uma tupla dinamicamente com range(início,fim,passo)
+"""
 # tupla = tuple(range(11))
 # print(tupla)
 # print(type(tupla))
@@ -96,8 +102,8 @@ from operator import index
 # Dicas na utilização de tuplas
 # Devemos utilizar tuplas sempre que não precisarmos modificar os dados contidos em uma coleção
 # Exemplo 1
-meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outrubo', 'Novembro', 'Dezembro')
-print(meses)
+# meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outrubo', 'Novembro', 'Dezembro')
+# print(meses)
 
 # O acesso de elementos em uma tupla também é semelhante a de uma lista
 # print(meses[5])
