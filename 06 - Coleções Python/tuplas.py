@@ -10,6 +10,15 @@ Existem basicamente duas diferenças
 2 - As tuplas são imutáveis: Isso significa que ao se criar uma tupla ela não muda.
 Toda operação em uma tupla, gera uma nova tupla.
 """
+
+"""
+# Por quê utilizar tuplas?
+"""
+# # - Tuplas são mais rápidas do que listas.
+# # - Tuplas deixam seu código mais seguro*.
+#
+# #* Isso porque trabalhar com elementos imutáveis traz mais segurança para o código.
+
 from operator import index
 
 # # CUIDADO 1: As tuplas são representadas por parênteses (), mas veja:
@@ -151,18 +160,12 @@ from operator import index
 # print(meses[::2]) # ('Janeiro', 'Março', 'Maio', 'Julho', 'Setembro', 'Novembro')
 
 """
-# Por quê utilizar tuplas?
-"""
-# - Tuplas são mais rápidas do que listas.
-# - Tuplas deixam seu código mais seguro*.
-
-# * Isso porque trabalhar com elementos imutáveis traz mais segurança para o código.
-
 # Copiando uma tupla para outra
+"""
 # tupla = (1, 2, 3)
 # print(tupla)
 #
-# nova = tupla # Na tup´la não temos o problema de Shallow Copy
+# nova = tupla # Na tupla não temos o problema de Shallow Copy
 #
 # print(nova)
 # print(tupla)
