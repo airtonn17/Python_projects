@@ -156,7 +156,7 @@ from operator import index
 # Slicing
 """
 # meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
-# # tupal[inicio,fim,passo]
+# # tupla[inicio,fim,passo]
 # print(meses[::2]) # ('Janeiro', 'Março', 'Maio', 'Julho', 'Setembro', 'Novembro')
 
 """
