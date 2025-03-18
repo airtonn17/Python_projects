@@ -27,17 +27,21 @@ OBS: Sobre dicionários
 # print(paises)
 # print(type(paises))
 
-# paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+"""
 # # Acessando Elementos
+"""
+# paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 #
-# # Forma 1 - Acessando via chave, da mesma forma que lista/tupla
-# print(paises['br'])
-# print(paises['py'])
+# # Forma 1 - Acessando via chave (da mesma forma que lista/tupla)
 #
-# # Forma 2 - Acessando via get - Recomendada
-# print(paises.get('br'))
-# OBS: Caso o get não encontre o objeto coma chave informada, será retornado o valor None e não será gerado KeyError
-
+# print(paises['br']) # Brasil
+# print(paises['py']) # Paraguai
+#
+# # Forma 2 - Acessando via get (Recomendada)
+# print(paises.get('br')) # Brasil
+# print(paises.get('ru')) # None
+# # OBS: Caso o get não encontre o objeto coma chave informada, será retornado o valor None e não será gerado KeyError
+#
 # paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 # pais = paises.get('ru')
 # if pais:
@@ -45,20 +49,25 @@ OBS: Sobre dicionários
 # else:
 #     print('Não encontrei o país')
 
-# Podemos definir um valor padrão para caso não encontremos o objeto com a chave informada
+"""
+# Definir um valor padrão (para caso não encontremos o objeto com a chave informada)
+"""
 # paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+#
 # pais = paises.get('ru', 'Não encontrado')
 # print(f'Encontrei o país {pais}')
 
-# paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+"""
+# Verificar se determinada chave se encontra em um dicionário.
+"""
+paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 
-# Podemos verificar se determinada chave se encontra em um dicionário.
-# print('br' in paises)
-# print('ru' in paises)
-# print('Estados Unidos' in paises)
-#
-# if 'ru' in paises:
-#     russia = paises['ru']
+print('br' in paises) # True
+print('ru' in paises) # False
+print('Estados Unidos' in paises) # False (por ser valor e não chave)
+
+if 'ru' in paises:
+    russia = paises['ru']
 
 # # Podemos utilizar qualquer tipo de dado (int, float, string, boolean), inclusive lista, tupla, dicionário, como chave
 # # de dicionários.
@@ -210,3 +219,4 @@ OBS: Sobre dicionários
 #
 # veja = {}.fromkeys(range(1, 11), 'novo')
 # print(veja) # {1: 'novo', 2: 'novo', 3: 'novo', 4: 'novo', 5: 'novo', 6: 'novo', 7: 'novo', 8: 'novo', 9: 'novo', 10: 'novo'}
+
