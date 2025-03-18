@@ -12,9 +12,11 @@ OBS: Sobre discionários
     - Tanto chave quanto valor podem ser de qualquer tipo de dado
     - Podemos misturar tipos de dados;
 """
-# Criação de Discionários
 
-# Forma 1 (Mais comum)
+""""
+# Criação de Discionários
+"""
+# # Forma 1 (Mais comum)
 #
 # paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 # print(paises)
@@ -48,7 +50,7 @@ OBS: Sobre discionários
 # pais = paises.get('ru', 'Não encontrado')
 # print(f'Encontrei o país {pais}')
 
-paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+# paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 
 # Podemos verufucar se determinada chave se encontra em um discionário.
 # print('br' in paises)
@@ -163,10 +165,10 @@ paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 # # podemos ter a certeza sobre cada informação.
 
 # Métodos de discionários.
-
-d = dict(a=1, b=2, c=3)
-print(d)
-print(type(d))
+#
+# d = dict(a=1, b=2, c=3)
+# print(d)
+# print(type(d))
 
 # # Limpar o discionário (zerar dados)
 # d.clear()

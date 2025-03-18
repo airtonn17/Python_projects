@@ -14,11 +14,11 @@ As listas em python são representadas por colchetes: []
 Listas são mutáveis: Ou seja, elas podem mudar constantemente.
 """
 
-lista1 = [1, 99, 4, 27, 15, 22, 3, 1, 44, 42, 27]
-lista2 = ['P', 'y', 't', 'h', 'o', 'n', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't']
-litsa3 = []
-lista4 = list(range(11))
-lista5 = list('Pytho Project')
+# lista1 = [1, 99, 4, 27, 15, 22, 3, 1, 44, 42, 27]
+# lista2 = ['P', 'y', 't', 'h', 'o', 'n', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't']
+# litsa3 = []
+# lista4 = list(range(11))
+# lista5 = list('Pytho Project')
 
 """
  Buscar Elementos na lista
@@ -29,7 +29,7 @@ lista5 = list('Pytho Project')
 #     print('Não encontrei a lista')
 
 """
- Podemos facilmente checar se determinado valor está contido na lista
+ Checar se determinado valor está contido na lista
 """
 # num = 7
 
