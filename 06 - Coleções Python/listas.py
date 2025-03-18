@@ -53,7 +53,7 @@ Listas são mutáveis: Ou seja, elas podem mudar constantemente.
 """
  Adicionar elementos em lista
 """
-# Forma 1 - Apend
+# Forma 1 - Append
 # OBS: Com o append nós só conseguimos adicionar 1 elemento por vez
 
 # print(lista1)
@@ -313,7 +313,7 @@ Listas são mutáveis: Ou seja, elas podem mudar constantemente.
 # print(sum(lista)) # Soma = 21
 # print(max(lista)) # Máximo valor = 6
 # print(min(lista)) # Mínimo valor = 1
-# print(len(lista)) # Tamamho da lista = 6
+# print(len(lista)) # Tamanho da lista = 6
 
 """
 # Converter Lista em Tupla
