@@ -1,20 +1,20 @@
 """
 Dicionários
 
-OBS: Em algumas linguagens de programação, os discionários Python são conhecidos por mapas.
+OBS: Em algumas linguagens de programação, os dicionários Python são conhecidos por mapas.
 
-Discionários são coleções do tipo chave/valor.
+Dicionários são coleções do tipo chave/valor.
 
-Discionários são representados por chaves {}.
+Dicionários são representados por chaves {}.
 
-OBS: Sobre discionários
+OBS: Sobre dicionários
     - Chave e valor são separados por dois pontos 'chave:valor';
     - Tanto chave quanto valor podem ser de qualquer tipo de dado
     - Podemos misturar tipos de dados;
 """
 
 """"
-# Criação de Discionários
+# Criação de Dicionários
 """
 # # Forma 1 (Mais comum)
 #
@@ -52,7 +52,7 @@ OBS: Sobre discionários
 
 # paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 
-# Podemos verufucar se determinada chave se encontra em um discionário.
+# Podemos verificar se determinada chave se encontra em um dicionário.
 # print('br' in paises)
 # print('ru' in paises)
 # print('Estados Unidos' in paises)
@@ -60,10 +60,10 @@ OBS: Sobre discionários
 # if 'ru' in paises:
 #     russia = paises['ru']
 
-# # Podemos utilizar qualquer tipo de dado (int, float, string, boolean), inclusive lista, tupla, discionário, como chave
-# # de discionários.
+# # Podemos utilizar qualquer tipo de dado (int, float, string, boolean), inclusive lista, tupla, dicionário, como chave
+# # de dicionários.
 #
-# # Tuplas por exemplo, são bastante interessantes de serem utilizadas como chave de discionário, pois as mesmas
+# # Tuplas por exemplo, são bastante interessantes de serem utilizadas como chave de dicionário, pois as mesmas
 # # são imutáveis.
 #
 # localidades = {
@@ -75,7 +75,7 @@ OBS: Sobre discionários
 # print(localidades)
 # print(type(localidades))
 
-# Adicionar elementos em um discionário
+# Adicionar elementos em um dicionário
 # receita = {'jan': 100, 'fev':120, 'mar':300}
 # print(receita)
 # print(type(receita))
@@ -89,7 +89,7 @@ OBS: Sobre discionários
 # receita.update(novo_dado) # receita.update({'mai': 500})
 # print(receita)
 #
-# # Atualizando dados em um discionário
+# # Atualizando dados em um dicionário
 #
 # # Forma 1
 # receita['mai'] = 550
@@ -99,10 +99,10 @@ OBS: Sobre discionários
 # receita.update({'mais': 600})
 # print(receita)
 #
-# CONCLUSÃO 1: A forma de adicionar novos elementos ou atualizar dados em um discionário é a mesma.
-# CONCLUSÃO 2: Em discionários, não podemos ter chaves repetidas.
+# CONCLUSÃO 1: A forma de adicionar novos elementos ou atualizar dados em um dicionário é a mesma.
+# CONCLUSÃO 2: Em dicionários, não podemos ter chaves repetidas.
 
-# Como remover dados de um discionário
+# Como remover dados de um dicionário
 
 # receita = {'jan': 100, 'fev':120, 'mar':300}
 # print(receita)
@@ -112,7 +112,7 @@ OBS: Sobre discionários
 # print(ret)
 # print(receita)
 #
-# # OBS 1: Aqui precisamos sempre infomar a chave, e caso não encontre o elemento, um KeyError é retornado.
+# # OBS 1: Aqui precisamos sempre informar a chave, e caso não encontre o elemento, um KeyError é retornado.
 # # OBS 2: Ao removermos um objeto, o valor deste objeto é sempre retornado.
 #
 # # Forma 2
@@ -151,7 +151,7 @@ OBS: Sobre discionários
 #
 # # Teríamos de saber qual é o índice de cada informação no produto.
 #
-# # 3 - Poderíamos utilizar um discioário para isso? Sim!
+# # 3 - Poderíamos utilizar um dicioário para isso? Sim!
 #
 # carrinho = []
 # produto1 = {'Nome: ': 'Play4', 'Quantidade': 1, 'Valor': 2300.00}
@@ -164,17 +164,17 @@ OBS: Sobre discionários
 # # Desta forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto
 # # podemos ter a certeza sobre cada informação.
 
-# Métodos de discionários.
+# Métodos de dicionários.
 #
 # d = dict(a=1, b=2, c=3)
 # print(d)
 # print(type(d))
 
-# # Limpar o discionário (zerar dados)
+# # Limpar o dicionário (zerar dados)
 # d.clear()
 # print(d)
 
-# Copiando um discionário para outro
+# Copiando um dicionário para outro
 # # Forma 1 - Deep Copy
 # novo = d.copy()
 # print(novo)
@@ -191,7 +191,7 @@ OBS: Sobre discionários
 # print(d)
 # print(novo)
 
-# # Forma não usual de criação de discionários
+# # Forma não usual de criação de dicionários
 #
 # outro = {}.fromkeys('a', 'b')
 #
