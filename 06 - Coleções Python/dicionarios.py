@@ -60,21 +60,22 @@ OBS: Sobre dicionários
 """
 # Verificar se determinada chave se encontra em um dicionário.
 """
-paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
-
-print('br' in paises) # True
-print('ru' in paises) # False
-print('Estados Unidos' in paises) # False (por ser valor e não chave)
-
-if 'ru' in paises:
-    russia = paises['ru']
-
-# # Podemos utilizar qualquer tipo de dado (int, float, string, boolean), inclusive lista, tupla, dicionário, como chave
-# # de dicionários.
+# paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
 #
-# # Tuplas por exemplo, são bastante interessantes de serem utilizadas como chave de dicionário, pois as mesmas
-# # são imutáveis.
+# print('br' in paises) # True
+# print('ru' in paises) # False
+# print('Estados Unidos' in paises) # False (por ser valor e não chave)
 #
+# if 'ru' in paises:
+#     russia = paises['ru']
+
+"""
+# # Podemos utilizar qualquer tipo de dado (int, float, string, boolean),
+    inclusive lista, tupla, dicionário, como chave de dicionários.
+    
+# # Tuplas por exemplo, são bastante interessantes de serem utilizadas
+    como chave de dicionário, pois as mesmas são imutáveis.
+"""
 # localidades = {
 #     (35.6895, 39.6917): 'Escritório em Tókio',
 #     (40.7128, 74.0060): 'Escritório em Nova York',
@@ -84,52 +85,61 @@ if 'ru' in paises:
 # print(localidades)
 # print(type(localidades))
 
+"""
 # Adicionar elementos em um dicionário
+"""
 # receita = {'jan': 100, 'fev':120, 'mar':300}
 # print(receita)
 # print(type(receita))
-#
+# +
 # # Forma 1 - Mais comum
 # receita['abr'] = 350
 # print(receita)
 #
 # # Forma 2
 # novo_dado = {'mai':500}
-# receita.update(novo_dado) # receita.update({'mai': 500})
+# receita.update(novo_dado) # O mesmo que -> receita.update({'mai': 500})
 # print(receita)
-#
+
+"""
 # # Atualizando dados em um dicionário
+"""
+# receita = {'jan': 100, 'fev':120, 'mar':300, 'abr':350, 'mai':500}
+# print(receita)
 #
 # # Forma 1
 # receita['mai'] = 550
 # print(receita)
 #
 # # Forma 2
-# receita.update({'mais': 600})
+# receita.update({'mai': 600})
 # print(receita)
 #
-# CONCLUSÃO 1: A forma de adicionar novos elementos ou atualizar dados em um dicionário é a mesma.
-# CONCLUSÃO 2: Em dicionários, não podemos ter chaves repetidas.
+# # CONCLUSÃO 1: A forma de adicionar novos elementos ou atualizar dados em um dicionário é a mesma.
+# # CONCLUSÃO 2: Em dicionários, não podemos ter chaves repetidas.
 
-# Como remover dados de um dicionário
+"""
+# # Como remover dados de um dicionário
+"""
+receita = {'jan': 100, 'fev':120, 'mar':300}
+print(receita)
 
-# receita = {'jan': 100, 'fev':120, 'mar':300}
-# print(receita)
-#
-# # Forma 1 - Mais comum
-# ret = receita.pop('mar')
-# print(ret)
-# print(receita)
-#
-# # OBS 1: Aqui precisamos sempre informar a chave, e caso não encontre o elemento, um KeyError é retornado.
-# # OBS 2: Ao removermos um objeto, o valor deste objeto é sempre retornado.
-#
-# # Forma 2
-# del receita['fev']
-# print(receita)
-# # Neste caso o valor removido não é retornado.
+# Forma 1 - Mais comum
+ret = receita.pop('mar')
+print(ret)
+print(receita)
 
+# OBS 1: Aqui precisamos sempre informar a chave, e caso não encontre o elemento, um KeyError é retornado.
+# OBS 2: Ao removermos um objeto, o valor deste objeto é sempre retornado.
+
+# Forma 2
+del receita['fev']
+print(receita)
+# Neste caso o valor removido não é retornado.
+
+"""
 # # Imagine que você tem um comércio eletrônico, onde temos um carrinho de compras na qual adicionamos produtos.
+"""
 # """
 # Carrinho de Compras:
 #     Produto 1:
