@@ -219,4 +219,3 @@ if 'ru' in paises:
 #
 # veja = {}.fromkeys(range(1, 11), 'novo')
 # print(veja) # {1: 'novo', 2: 'novo', 3: 'novo', 4: 'novo', 5: 'novo', 6: 'novo', 7: 'novo', 8: 'novo', 9: 'novo', 10: 'novo'}
-
