@@ -121,56 +121,47 @@ OBS: Sobre dicionários
 """
 # # Como remover dados de um dicionário
 """
-receita = {'jan': 100, 'fev':120, 'mar':300}
-print(receita)
-
-# Forma 1 - Mais comum
-ret = receita.pop('mar')
-print(ret)
-print(receita)
-
-# OBS 1: Aqui precisamos sempre informar a chave, e caso não encontre o elemento, um KeyError é retornado.
-# OBS 2: Ao removermos um objeto, o valor deste objeto é sempre retornado.
-
-# Forma 2
-del receita['fev']
-print(receita)
-# Neste caso o valor removido não é retornado.
+# receita = {'jan': 100, 'fev':120, 'mar':300}
+# print(receita)
+#
+# # Forma 1 - Mais comum
+# ret = receita.pop('mar')
+# print(ret)
+# print(receita)
+#
+# # OBS 1: Aqui precisamos sempre informar a chave, e caso não encontre o elemento, um KeyError é retornado.
+# # OBS 2: Ao removermos um objeto, o valor deste objeto é sempre retornado.
+#
+# # Forma 2
+# del receita['fev']
+# print(receita)
+# # Neste caso o valor removido não é retornado.
 
 """
-# # Imagine que você tem um comércio eletrônico, onde temos um carrinho de compras na qual adicionamos produtos.
+# # Diferentes formas de criar uma lista de produtos detalhada.
 """
-# """
-# Carrinho de Compras:
-#     Produto 1:
-#         - nome;
-#         - quantidade;
-#         - preço;
-#     Produto 2:
-#         - nome;
-#         - quantidade;
-#         - preço;
-# """
-# # 1 - Poderíamos utilizar uma lista para isso? Sim!
+# # Carrinho de Compras:
+# # Produto 1 -> [nome; quantidade; preço]
+# # Produto 2 -> [nome; quantidade; preço]
+#
+# # 1 - Lista
 # carrinho = []
 # produto1 = ['Play4', 1, 2300.00]
 # produto2 = ['God Of War', 1, 150.00]
 #
 # carrinho.append(produto1)
 # carrinho.append(produto2)
-# print(carrinho)
-#
+# print(carrinho) # [['Play4', 1, 2300.0], ['God Of War', 1, 150.0]]
 # # Teríamos de saber qual é o índice de cada informação no produto.
 #
-# # Poderíamos utilizar uma tupla para isso? Sim!
+# # 2 - Tupla
 # produto1 = ('Play4', 1, 2300.00)
 # produto2 = ('God Of War 4', 1, 150.00)
 # carrinho = (produto1, produto2)
-# print(carrinho)
-#
+# print(carrinho)  # (('Play4', 1, 2300.0), ('God Of War 4', 1, 150.0))
 # # Teríamos de saber qual é o índice de cada informação no produto.
 #
-# # 3 - Poderíamos utilizar um dicioário para isso? Sim!
+# # 3 - Dicionário
 #
 # carrinho = []
 # produto1 = {'Nome: ': 'Play4', 'Quantidade': 1, 'Valor': 2300.00}
@@ -178,12 +169,13 @@ print(receita)
 #
 # carrinho.append(produto1)
 # carrinho.append(produto2)
-# print(carrinho)
-#
+# print(carrinho) # [{'Nome: ': 'Play4', 'Quantidade': 1, 'Valor': 2300.0}, {'Nome: ': 'God Of War 4', 'Quantidade': 1, 'Valor': 150.0}]
 # # Desta forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto
-# # podemos ter a certeza sobre cada informação.
+# # Podemos ter a certeza sobre cada informação.
 
+"""
 # Métodos de dicionários.
+"""
 #
 # d = dict(a=1, b=2, c=3)
 # print(d)
