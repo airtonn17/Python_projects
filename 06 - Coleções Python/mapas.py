@@ -1,13 +1,13 @@
 """
-Mapas - Conhecidos em Python como discionários.
+Mapas - Conhecidos em Python como dicionários.
 
-Discionários em Python são representados por chaves {}
+Dicionários em Python são representados por chaves {}
 """
 
 receita = {'jan': 100, 'fev': 250, 'mar': 400}
 print(receita)
 
-# # Interar sobre discionários
+# # Iterar sobre dicionários
 #
 # for mes in receita:
 #     print(mes)
@@ -41,7 +41,7 @@ print(receita)
 # Soma*, Valor Máximo*, Valor Mínimo*, Tamanho
 # * Se os valores forem todos inteiros ou reais
 
-print(sum(receita.values()))
-print(max(receita.values()))
-print(min(receita.values()))
-print(len(receita.values()))
+# print(sum(receita.values()))
+# print(max(receita.values()))
+# print(min(receita.values()))
+# print(len(receita.values()))
