@@ -170,7 +170,7 @@ OBS: Sobre dicionários
 # carrinho.append(produto1)
 # carrinho.append(produto2)
 # print(carrinho) # [{'Nome: ': 'Play4', 'Quantidade': 1, 'Valor': 2300.0}, {'Nome: ': 'God Of War 4', 'Quantidade': 1, 'Valor': 150.0}]
-+++# # Desta forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto
+# # Desta forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto
 # # Podemos ter a certeza sobre cada informação.
 
 """
@@ -206,21 +206,20 @@ OBS: Sobre dicionários
 """
 # Forma não usual de criação de dicionários
 """
-outro = {}.fromkeys('a', 'b')
-
-print(outro)
-print(type(outro))
-
-usuario = {}.fromkeys(['nome', 'pontes', 'email', 'profile'], 'desconhecido')
-print(usuario) # {'nome': 'desconhecido', 'pontes': 'desconhecido', 'email': 'desconhecido', 'profile': 'desconhecido'}
-print(type(usuario))
-
-# O metodo fromkeys recebe dois parâmetros: um iterável e um valor.
-# Ele vai gerar para cada valor do iterável uma chave e irá atribuir a essa chave o valor informado.
-
-veja = {}.fromkeys('teste', 'valor')
-print(veja) # {'t': 'valor', 'e': 'valor', 's': 'valor'}
-
-veja = {}.fromkeys(range(1, 11), 'novo')
-print(veja) # {1: 'novo', 2: 'novo', 3: 'novo', 4: 'novo', 5: 'novo', 6: 'novo', 7: 'novo', 8: 'novo', 9: 'novo', 10: 'novo'}
-
+# outro = {}.fromkeys('a', 'b')
+#
+# print(outro)
+# print(type(outro))
+#
+# usuario = {}.fromkeys(['nome', 'pontes', 'email', 'profile'], 'desconhecido')
+# print(usuario) # {'nome': 'desconhecido', 'pontes': 'desconhecido', 'email': 'desconhecido', 'profile': 'desconhecido'}
+# print(type(usuario))
+#
+# # O metodo fromkeys recebe dois parâmetros: um iterável e um valor.
+# # Ele vai gerar para cada valor do iterável uma chave e irá atribuir a essa chave o valor informado.
+#
+# veja = {}.fromkeys('teste', 'valor')
+# print(veja) # {'t': 'valor', 'e': 'valor', 's': 'valor'}
+#
+# veja = {}.fromkeys(range(1, 11), 'novo')
+# print(veja) # {1: 'novo', 2: 'novo', 3: 'novo', 4: 'novo', 5: 'novo', 6: 'novo', 7: 'novo', 8: 'novo', 9: 'novo', 10: 'novo'}
