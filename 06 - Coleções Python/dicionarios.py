@@ -170,55 +170,57 @@ OBS: Sobre dicionários
 # carrinho.append(produto1)
 # carrinho.append(produto2)
 # print(carrinho) # [{'Nome: ': 'Play4', 'Quantidade': 1, 'Valor': 2300.0}, {'Nome: ': 'God Of War 4', 'Quantidade': 1, 'Valor': 150.0}]
-# # Desta forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto
++++# # Desta forma, facilmente adicionamos ou removemos produtos no carrinho e em cada produto
 # # Podemos ter a certeza sobre cada informação.
 
 """
-# Métodos de dicionários.
+# Limpar o dicionário (zerar dados)
 """
-#
 # d = dict(a=1, b=2, c=3)
 # print(d)
 # print(type(d))
-
-# # Limpar o dicionário (zerar dados)
+#
 # d.clear()
 # print(d)
 
+"""
 # Copiando um dicionário para outro
+"""
 # # Forma 1 - Deep Copy
-# novo = d.copy()
+# dic = dict(a=1, b=2, c=3)
+# novo = dic.copy()
 # print(novo)
 #
-# novo['d'] = 4
-# print(d)
+# novo['dic'] = 4
+# print(dic)
 # print(novo)
-
+#
 # # Forma 2 - Shallow Copy
-# novo = d
+# novo = dic
 # print(novo)
 #
-# novo['d'] = 4
-# print(d)
+# novo['dic'] = 4
+# print(dic)
 # print(novo)
 
-# # Forma não usual de criação de dicionários
-#
-# outro = {}.fromkeys('a', 'b')
-#
-# print(outro)
-# print(type(outro))
-#
-# usuario = {}.fromkeys(['nome', 'pontes', 'email', 'profile'], 'desconhecido')
-# print(usuario)
-# print(type(usuario))
-#
-# # O méodo fromkeys recebe dois parâmetros: um interável e um valor.
-# # Ele vai gerar para cada valor do interável uma chave e irá atribuir a essa chave o valor informado.
-#
-# veja = {}.fromkeys('teste', 'valor')
-# print(veja) # {'t': 'valor', 'e': 'valor', 's': 'valor'}
-#
-# veja = {}.fromkeys(range(1, 11), 'novo')
-# print(veja) # {1: 'novo', 2: 'novo', 3: 'novo', 4: 'novo', 5: 'novo', 6: 'novo', 7: 'novo', 8: 'novo', 9: 'novo', 10: 'novo'}
+"""
+# Forma não usual de criação de dicionários
+"""
+outro = {}.fromkeys('a', 'b')
+
+print(outro)
+print(type(outro))
+
+usuario = {}.fromkeys(['nome', 'pontes', 'email', 'profile'], 'desconhecido')
+print(usuario) # {'nome': 'desconhecido', 'pontes': 'desconhecido', 'email': 'desconhecido', 'profile': 'desconhecido'}
+print(type(usuario))
+
+# O metodo fromkeys recebe dois parâmetros: um iterável e um valor.
+# Ele vai gerar para cada valor do iterável uma chave e irá atribuir a essa chave o valor informado.
+
+veja = {}.fromkeys('teste', 'valor')
+print(veja) # {'t': 'valor', 'e': 'valor', 's': 'valor'}
+
+veja = {}.fromkeys(range(1, 11), 'novo')
+print(veja) # {1: 'novo', 2: 'novo', 3: 'novo', 4: 'novo', 5: 'novo', 6: 'novo', 7: 'novo', 8: 'novo', 9: 'novo', 10: 'novo'}
 
