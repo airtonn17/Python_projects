@@ -41,3 +41,4 @@ print(res)
 
 # Encontrando as 5 palavras com mais ocorrências no texto.
 print(res.most_common(5))
+
