@@ -185,20 +185,21 @@ Diferença entre Conjuntos (Sets) e Mapas (Discionário) em Python:
 """
 # # Gerar um conjunto de estudantes que não estão no outro curso.
 """
-estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Júlia', 'Guilherme'}
-estudantes_java = {'Fernando', 'Gustavo', 'Júlia', 'Ana', 'Patricia'}
+# estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Júlia', 'Guilherme'}
+# estudantes_java = {'Fernando', 'Gustavo', 'Júlia', 'Ana', 'Patricia'}
+#
+# so_python = estudantes_python.difference(estudantes_java)
+# print(so_python)
+#
+# so_java = estudantes_java.difference(estudantes_python)
+# print(so_java)
 
-so_python = estudantes_python.difference(estudantes_java)
-print(so_python)
-
-so_java = estudantes_java.difference(estudantes_python)
-print(so_java)
-
-# Soma* Valor Máximo* Valor Mínimo* Tamanho
-# * Se os valores forem todos inteiros ou reais
-
-s = {1, 2, 3, 4, 5, 6}
-print(sum(s))
-print(max(s))
-print(min(s))
-print(len(s))
+"""
+# # Soma* Valor Máximo* Valor Mínimo* Tamanho
+# # * Se os valores forem todos inteiros ou reais
+"""
+# s = {1, 2, 3, 4, 5, 6}
+# print(sum(s))
+# print(max(s))
+# print(min(s))
+# print(len(s))
