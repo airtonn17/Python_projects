@@ -26,14 +26,14 @@ from collections import OrderedDict
 """
 # # Diferença entre Dict e OrderedDict
 """
-# Dicionários Comuns
-dict1 = {'a': 1, 'b': 2}
-dict2 = {'b': 2, 'a': 1}
-
-print(dict1 == dict2) # True -> Já que a ordem dos elementos não importa para os dicionários.
-
-# Ordered Dict
-odict1 = OrderedDict({'a': 1, 'b': 2})
-odict2 = OrderedDict({'b': 2, 'a': 1})
-
-print(odict1 == odict2) # False -> Já que a ordem dos elementos importa para o OrderedDict.
+# # Dicionários Comuns
+# dict1 = {'a': 1, 'b': 2}
+# dict2 = {'b': 2, 'a': 1}
+#
+# print(dict1 == dict2) # True -> Já que a ordem dos elementos não importa para os dicionários.
+#
+# # Ordered Dict
+# odict1 = OrderedDict({'a': 1, 'b': 2})
+# odict2 = OrderedDict({'b': 2, 'a': 1})
+#
+# print(odict1 == odict2) # False -> Já que a ordem dos elementos importa para o OrderedDict.
