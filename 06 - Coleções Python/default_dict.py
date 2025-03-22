@@ -21,10 +21,10 @@ e retornar valores.
 from collections import defaultdict
 
 dicionario = defaultdict(lambda: 0)
-print(dicionario)
+print(dicionario) # defaultdict(<function <lambda> at 0x000001B86D7C8AE0>, {})
 
 dicionario['curso'] = 'Python Project'
-print(dicionario)
+print(dicionario) # defaultdict(<function <lambda> at 0x000001B86D7C8AE0>, {'curso': 'Python Project'})
 
 print(dicionario['outro']) # KeyError no dicionário comum, mas aqui não.
-print(dicionario)
+print(dicionario) # defaultdict(<function <lambda> at 0x000001B86D7C8AE0>, {'curso': 'Python Project', 'outro': 0})
