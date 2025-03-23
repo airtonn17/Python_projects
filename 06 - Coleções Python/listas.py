@@ -374,4 +374,3 @@ Listas são mutáveis: Ou seja, elas podem mudar constantemente.
 # # Ao utilizarmos lista.copy() copiamos os dados da lista para uma nova lista,
 # # mas elas ficaram totalmente independentes, ou seja, modificando uma lista, não afeta a outra
 # # Em Python, isso é chamado de Deep Copy (cópia profunda)
-
