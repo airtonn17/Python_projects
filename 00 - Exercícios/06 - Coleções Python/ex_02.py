@@ -7,9 +7,6 @@ na tela esta soma.
 c) Modifique a lista na posição 5, atribuindo a esta posição o valor 100.
 d) Mostre na tela cada valor da lista A, um em cada linha.
 """
-"""
-# # Minha Solução
-"""
 A: list[int] = [1, 0, 5, -2, -5, 7]
 
 soma: int  = A[0] + A[1] + A[5]
@@ -20,16 +17,3 @@ print(A[5])
 
 for valor in A:
     print(valor)
-
-"""
-# # Solução do Professor
-"""
-# A: list[int] = [1, 0, 5, -2, -5, 7]
-#
-# soma: int = A[0] + A[1] + A[5]
-# print(f'A soma dos valores eh {soma}')
-#
-# A[5] = 100
-#
-# for valor in A:
-#     print(valor)
