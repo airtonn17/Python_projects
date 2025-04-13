@@ -63,7 +63,8 @@ utilizado em Python para definir blocos.
 """
 # Difinindo a prineira função
 """
-def fiz_oi():
+# Definição
+def diz_oi():
     print('oi')
 
 # OBS:
@@ -72,4 +73,25 @@ def fiz_oi():
 # 3 - Veja que esta função não recebe nenhum parametro de entrada;
 # 4 - Veja que esta função não retorna nada.
 
+"""
+Ultilizando função
+"""
+# Chamada de execução
+diz_oi()
 
+# Exemplo 2
+def cantar_parabens():
+    print('Parabéns pra você')
+    print('Nesta data queria')
+    print('Muitas felicidades')
+    print('Muitos anos de vida')
+    print('Viva o aniversariante')
+    print(' ')
+
+cantar_parabens()
+
+# Em Python, podemos inclusive criar variáveis do tipo de uma função e executar estra função através da variável
+
+canta = cantar_parabens
+
+canta()
