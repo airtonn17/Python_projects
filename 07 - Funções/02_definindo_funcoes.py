@@ -61,11 +61,11 @@ utilizado em Python para definir blocos.
 # print(cores)
 
 """
-# Difinindo a prineira função
+# Difinindo a primeira função
 """
-# Definição
-def diz_oi():
-    print('oi')
+# # Definição
+# def diz_oi():
+#     print('oi')
 
 # OBS:
 # 1 - Veja que, dentro das nossas funções podemos utilizar outras funções;
@@ -76,8 +76,25 @@ def diz_oi():
 """
 Ultilizando função
 """
-# Chamada de execução
+# # Chamada de execução
+# diz_oi()
+
+"""
+ATENÇÃO:
+
+Nunca esqueça de ultilizar o parêntese ao executar uma função.
+
+Exemplo:
+
+# Errado!
+diz_oi
+
+# Certo
 diz_oi()
+
+# Errado!
+diz_oi ()
+"""
 
 # Exemplo 2
 def cantar_parabens():
@@ -88,10 +105,11 @@ def cantar_parabens():
     print('Viva o aniversariante')
     print(' ')
 
-cantar_parabens()
+# for n in range (5):
+#     cantar_parabens()
 
-# Em Python, podemos inclusive criar variáveis do tipo de uma função e executar estra função através da variável
+
+# Em Python, podemos inclusive criar variáveis do tipo de uma função e executar esta função através da variável
 
 canta = cantar_parabens
-
 canta()
