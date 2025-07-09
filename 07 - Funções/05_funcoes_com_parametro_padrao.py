@@ -85,7 +85,111 @@ Funções com parâmetro padrão (Default Paramters)
 # print(mostra_informacao(nome = 'Stephany'))
 
 
+"""
+# Porque utilizar parâmetros com valor default?
+"""
+
+# - Nos permite ser mais flexíveis nas funções;
+# - Evita erros com parâmetros incorretos;
+# - Nos permitem trabalhar com exemplos mais legíveis de código;
+
 
 """
-# Poruqe utilizar parâmetros com valor default?
+# Quais tipos de dados podemos utilizar como valores default para parâmetros?
 """
+#
+# # - Qualquer tipo de dado:
+#     # - Números, strings, floats, booleanos, listas, tuplas, dicionários, etc;
+#
+# # Exemplo
+#
+# def soma(num1, num2):
+#     return num1 + num2
+#
+# def mat(num1, num2, fun = soma):
+#     return fun(num1, num2)
+#
+# def subtracao(num1, num2):
+#     return num1 - num2
+#
+# print(mat(2, 3))
+# print(mat(2, 2, subtracao))
+# print()
+
+
+"""
+# Escopo - Evitar problemas e confusões... 
+"""
+#
+# # Variáveis globais
+# # Variáveis locais
+# instrutor = 'Airton' # Variável global
+# def diz_oi():
+#     instrutor = 'Python' # Variável local
+#     return f'Oi, {instrutor}'
+#
+# print(diz_oi())
+#
+# # OBS: Se tivermos uma variável local com o mesmo nome de uma variável global, a local terá preferência.
+
+
+"""
+# Uma variável local só é reconhecida dentro o bloco que foi criada.
+"""
+#
+# def diz_oi():
+#     prof = 'Airton' # Variável local
+#     return f'Olá {prof}'
+#
+# print(diz_oi())
+# # print(prof) # NameError
+
+"""
+# ATENÇÃO com variáveis globais (Se puder evitar, evite!)
+"""
+#
+# total = 0
+#
+# def incrementa():
+#     total = total + 1 # UnboundLocalError (A variável local está sendo utilizada para processamento sem ter sido inicializada)
+#     return total
+#
+# print(incrementa())
+
+
+"""
+# ATENÇÃO com variáveis globais (Como resolver caso utilizar)
+"""
+#
+# total = 0
+#
+# def incrementa():
+#     global total # Avisando que queremos utilizar a variável global
+#
+#     total = total + 1
+#     return total
+#
+# print(incrementa())
+# print(incrementa())
+# print(incrementa())
+
+
+"""
+# Podemos ter funções que são declaradas dentro de funções, e também tem uma forma especial de escopo de variável
+"""
+#
+# def fora():
+#     contador = 0
+#
+#     def dentro():
+#         nonlocal contador
+#
+#         contador = contador + 1
+#         return contador
+#     return dentro()
+#
+# print(fora())
+# print(fora())
+# print(fora())
+#
+# # print(dentro()) #NameError
