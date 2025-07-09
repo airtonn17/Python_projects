@@ -70,13 +70,35 @@ OBS; Sobre a palavra return
 #     return 'b'
 #
 # print(nova_funcao())
+#
+# # 3 - Podemos, em uma função, retornar qualquer tipo de dado e até mesmo múltiplos valores;
+#
+# def outra_funcao():
+#     return 2, 3, 4, 5
+#
+# # num1, num2, num3, num4 = outra_funcao()
+# # print(num1, num2, num3, num4)
+#
+# print(outra_funcao())
 
-# 3 - Podemos, em uma função, retornar qualquer tipo de dado e até mesmo múltiplos valores;
+# # Vamos criar uma função para jugar uma moeda
+#
+# from random import random
+#
+# def joga_moeda():
+#     # Gera um número pseudo-randônico entre 0 e 1
+#     if random() > 0.5:
+#         return 'Cara'
+#     return 'Coroa'
+#
+# print(joga_moeda())
 
-def outra_funcao():
-    return 2, 3, 4, 5
+# Erros comuns na utilização oo retorno, que na verdade nem é erro, mas sim codificação desnecessária.
 
-# num1, num2, num3, num4 = outra_funcao()
-# print(num1, num2, num3, num4)
+def eh_impar():
+    numero = 6
+    if numero % 2 != 0:
+        return True
+    return False
 
-print(outra_funcao())
+print(eh_impar())
