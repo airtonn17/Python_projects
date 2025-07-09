@@ -8,6 +8,13 @@ palavra reservada return
 
 OBS: Não precisamos necessáriamente criar uma variável para receber o retorno
 de uma função. Podemos passar execução da função para outras funções.
+
+OBS; Sobre a palavra return
+
+1 - Ela finaliza a função, ou seja, ela sai da execução da função;
+2 - Podemos ter, em uma função, diferentes returns;
+3 - Podemos, em uma função, retornar qualquer tipo de dado e até mesmo múltiplos valores;
+
 """
 
 # numeros = [1, 2, 3]
@@ -31,12 +38,45 @@ de uma função. Podemos passar execução da função para outras funções.
 #
 # print(f'Retorno: {quadrado_de_7() + 1}')
 
-# Refatorando a primeira função
+# # Refatorando a primeira função
+#
+# def diz_oi():
+#     return 'Oi '
+#
+# alguem = 'Pedro!'
+#
+# diz_oi()
+# print(diz_oi() + alguem)
 
-def diz_oi():
-    return 'Oi '
+# # OBS; Sobre a palavra return
+#
+# # 1 - Ela finaliza a função, ou seja, ela sai da execução da função;
+#
+# def diz_oi():
+#     print('Estou sendo execultado antes o retorno')
+#     return 'Oi!'
+#     print('Estou sendo execultado após o retorno')
+#
+# print(diz_oi())
+#
+# # 2 - Podemos ter, em uma função, diferentes returns;
+#
+# def nova_funcao():
+#     variavel = False
+#     if variavel:
+#         return 4
+#     elif variavel is None:
+#         return 3.2
+#     return 'b'
+#
+# print(nova_funcao())
 
-alguem = 'Pedro!'
+# 3 - Podemos, em uma função, retornar qualquer tipo de dado e até mesmo múltiplos valores;
 
-diz_oi()
-print(diz_oi() + alguem)
+def outra_funcao():
+    return 2, 3, 4, 5
+
+# num1, num2, num3, num4 = outra_funcao()
+# print(num1, num2, num3, num4)
+
+print(outra_funcao())
