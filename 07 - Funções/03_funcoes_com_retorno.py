@@ -27,7 +27,10 @@ OBS; Sobre a palavra return
 #
 # print(f"Retorno de print: {ret_pr}")
 
+
+"""
 # # Vamos refatorar essa função para que ela retorne um valor
+"""
 #
 # def quadrado_de_7():
 #     return 7 * 7
@@ -38,7 +41,10 @@ OBS; Sobre a palavra return
 #
 # print(f'Retorno: {quadrado_de_7() + 1}')
 
+
+"""
 # # Refatorando a primeira função
+"""
 #
 # def diz_oi():
 #     return 'Oi '
@@ -81,7 +87,10 @@ OBS; Sobre a palavra return
 #
 # print(outra_funcao())
 
+
+"""
 # # Vamos criar uma função para jugar uma moeda
+"""
 #
 # from random import random
 #
@@ -93,12 +102,15 @@ OBS; Sobre a palavra return
 #
 # print(joga_moeda())
 
+
+"""
 # Erros comuns na utilização oo retorno, que na verdade nem é erro, mas sim codificação desnecessária.
-
-def eh_impar():
-    numero = 6
-    if numero % 2 != 0:
-        return True
-    return False
-
-print(eh_impar())
+"""
+#
+# def eh_impar():
+#     numero = 6
+#     if numero % 2 != 0:
+#         return True
+#     return False
+#
+# print(eh_impar())
