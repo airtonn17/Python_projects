@@ -37,9 +37,12 @@ estamos definindo uma função. Também abrimos o bloco de código com o já con
 utilizado em Python para definir blocos.
 
 """
+
+
 """
 # Exemplo de utilizaçao de Funções
 """
+#
 # cores = ['verde', 'amarelo', 'azul', 'branco']
 #
 # # Utilizando a funçao integrada (Built-in) do Python print()
@@ -60,9 +63,11 @@ utilizado em Python para definir blocos.
 # cores.clear()
 # print(cores)
 
+
 """
 # Difinindo a primeira função
 """
+#
 # # Definição
 # def diz_oi():
 #     print('oi')
@@ -73,28 +78,31 @@ utilizado em Python para definir blocos.
 # 3 - Veja que esta função não recebe nenhum parametro de entrada;
 # 4 - Veja que esta função não retorna nada.
 
+
 """
 Ultilizando função
 """
+#
 # # Chamada de execução
 # diz_oi()
 
 """
 ATENÇÃO:
-
-Nunca esqueça de ultilizar o parêntese ao executar uma função.
-
-Exemplo:
-
-# Errado!
-diz_oi
-
-# Certo
-diz_oi()
-
-# Errado!
-diz_oi ()
 """
+#
+# Nunca esqueça de utilizar o parêntese ao executar uma função.
+#
+# Exemplo 1:
+#
+# # Errado!
+# diz_oi
+#
+# # Certo
+# diz_oi()
+#
+# # Errado!
+# diz_oi ()
+
 
 # Exemplo 2
 def cantar_parabens():
@@ -107,7 +115,6 @@ def cantar_parabens():
 
 # for n in range (5):
 #     cantar_parabens()
-
 
 # Em Python, podemos inclusive criar variáveis do tipo de uma função e executar esta função através da variável
 
