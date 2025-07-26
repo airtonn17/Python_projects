@@ -95,6 +95,37 @@ def mostra_info(a, b, *args, instrutor='Airton', **kwargs):
 # args =  ()
 # instrutor = 3
 # kwargs = {'sobrenome': 'Cavalcante', 'cargo': 'Instrutor'
+#
+#
+# print(mostra_info(1, 2, 3, sobrenome='Cavalcante', cargo='Instrutor'))
 
 
-print(mostra_info(1, 2, 3, sobrenome='Cavalcante', cargo='Instrutor'))
+"""
+# Desempacotar com **kwargs
+"""
+
+def mostra_nomes(**kwargs):
+    return f"{kwargs['nome']} {kwargs['sobrenome']}"
+
+nomes = {'nome': 'Felicity', 'sobrenome': 'Jones'}
+
+print(mostra_nomes(**nomes)) # A partir do duplo asterisco podemos desempacotar o dicionário
+
+def soma_multiplos_numeros(a, b, c):
+    print(a+ b + c)
+
+lista = [1, 2, 3]
+tupla = (1, 2, 3)
+conjunto = {1, 2, 3}
+
+soma_multiplos_numeros(*lista)
+soma_multiplos_numeros(*tupla)
+soma_multiplos_numeros(*conjunto)
+
+dicionario = dict(a=1, b=2, c=3)
+soma_multiplos_numeros(**dicionario)
+
+# OBS! Os nomes da chave em um dicionário devem ser os mesmo dos parâmetros da função
+
+# dicionario = dict(d=1, e=2, f=3) # TypeError!
+# soma_multiplos_numeros(**dicionario)
