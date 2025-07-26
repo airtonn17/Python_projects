@@ -111,7 +111,8 @@ nomes = {'nome': 'Felicity', 'sobrenome': 'Jones'}
 
 print(mostra_nomes(**nomes)) # A partir do duplo asterisco podemos desempacotar o dicionário
 
-def soma_multiplos_numeros(a, b, c):
+def soma_multiplos_numeros(a, b, c, **kwargs):
+    # Sem o **kwargs no final dos parâmetros, não podemos passar outros parâmetros)
     print(a+ b + c)
 
 lista = [1, 2, 3]
@@ -122,8 +123,8 @@ soma_multiplos_numeros(*lista)
 soma_multiplos_numeros(*tupla)
 soma_multiplos_numeros(*conjunto)
 
-dicionario = dict(a=1, b=2, c=3)
-soma_multiplos_numeros(**dicionario)
+dicionario = dict(a=1, b=2, c=3, nome='Python')
+soma_multiplos_numeros(**dicionario, lang='Project')
 
 # OBS! Os nomes da chave em um dicionário devem ser os mesmo dos parâmetros da função
 
