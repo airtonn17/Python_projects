@@ -1,4 +1,10 @@
-def mensagem():
-    return 'Python'
+"""
+1. Crie um programa que tenha uma função que recebe um parâmetro inteiro e devolve o seu dobro.
+"""
 
-print(mensagem())
+def dobro (numero: int) -> int:
+    return numero * 2
+
+if __name__ = '__main__':
+    valor: int = 4
+    print(f'O dobre de {valor} é {dobro(valor)}')
