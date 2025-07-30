@@ -37,19 +37,50 @@ iterável.
 """
 # Lis Comprehension vs Loop
 """
+#
+# numeros = [1, 2, 3, 4, 5]
+#
+# # Loop
+# numeros_dobrados = []
+#
+# for numero in numeros:
+#     numeros_dobrados.append(numero * 2)
+#
+# print(numeros_dobrados)
+#
+# # List Comprehension
+# print([numero * 2 for numero in numeros])
 
-numeros = [1, 2, 3, 4, 5]
 
-# Loop
-numeros_dobrados = []
+"""
+# Outros Exemplos
+"""
 
-for numero in numeros:
-    numeros_dobrados.append(numero * 2)
+# 01
 
-print(numeros_dobrados)
+nome = 'Python Project'
 
-# List Comprehension
-print([numero * 2 for numero in numeros])
+print([letra.upper() for letra in nome])
 
 
+# 02
 
+amigos = ['maria', 'julia', 'pedro', 'guilherme', 'vanessa']
+
+print([amigo.capitalize() for amigo in amigos])
+
+# def caixa_alta(nome): # Modo que o professor fez mas achei um melhor
+#     nome = nome.replace(nome[0], nome[0].upper())
+#     return nome
+#
+# print([caixa_alta(amigo) for amigo in amigos])
+
+
+# 03
+
+print([numero * 3 for numero in range(1, 10)])
+
+
+# 04
+
+print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
