@@ -62,7 +62,6 @@ nome = 'Python Project'
 
 print([letra.upper() for letra in nome])
 
-
 # 02
 
 amigos = ['maria', 'julia', 'pedro', 'guilherme', 'vanessa']
@@ -75,16 +74,13 @@ print([amigo.capitalize() for amigo in amigos])
 #
 # print([caixa_alta(amigo) for amigo in amigos])
 
-
 # 03
 
 print([numero * 3 for numero in range(1, 10)])
 
-
 # 04
 
 print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
-
 
 # 05
 
