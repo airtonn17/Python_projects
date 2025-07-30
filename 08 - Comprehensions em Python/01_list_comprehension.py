@@ -38,5 +38,18 @@ iterável.
 # Lis Comprehension vs Loop
 """
 
+numeros = [1, 2, 3, 4, 5]
+
+# Loop
+numeros_dobrados = []
+
+for numero in numeros:
+    numeros_dobrados.append(numero * 2)
+
+print(numeros_dobrados)
+
+# List Comprehension
+print([numero * 2 for numero in numeros])
+
 
 
