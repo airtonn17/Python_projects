@@ -84,3 +84,8 @@ print([numero * 3 for numero in range(1, 10)])
 # 04
 
 print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
+
+
+# 05
+
+print([str(numero) for numero in [1, 2, 3, 4, 5]])
