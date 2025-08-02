@@ -57,31 +57,48 @@ iterável.
 """
 
 # 01
-
-nome = 'Python Project'
-
-print([letra.upper() for letra in nome])
+#
+# nome = 'Python Project'
+#
+# print([letra.upper() for letra in nome])
 
 # 02
-
-amigos = ['maria', 'julia', 'pedro', 'guilherme', 'vanessa']
-
-print([amigo.capitalize() for amigo in amigos])
-
-# def caixa_alta(nome): # Modo que o professor fez mas achei um melhor
-#     nome = nome.replace(nome[0], nome[0].upper())
-#     return nome
 #
-# print([caixa_alta(amigo) for amigo in amigos])
+# amigos = ['maria', 'julia', 'pedro', 'guilherme', 'vanessa']
+#
+# print([amigo.capitalize() for amigo in amigos])
+#
+# # def caixa_alta(nome): # Modo que o professor fez mas achei um melhor
+# #     nome = nome.replace(nome[0], nome[0].upper())
+# #     return nome
+# #
+# # print([caixa_alta(amigo) for amigo in amigos])
+#
+# # 03
+#
+# print([numero * 3 for numero in range(1, 10)])
+#
+# # 04
+#
+# print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
+#
+# # 05
+#
+# print([str(numero) for numero in [1, 2, 3, 4, 5]])
 
-# 03
 
-print([numero * 3 for numero in range(1, 10)])
+"""
+# Nós podemos adicionar estruturas condicionais lógicas às nossas List Comprehension
+"""
 
-# 04
+# Exemplos
 
-print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
+# 01
 
-# 05
+numeros = [1, 2, 3, 4, 5, 6]
 
-print([str(numero) for numero in [1, 2, 3, 4, 5]])
+pares = [ numero for numero in numeros if numero % 2 == 0]
+imparees = [ numero for numero in numeros if numero % 2 != 0]
+
+print(pares)
+print(imparees)
