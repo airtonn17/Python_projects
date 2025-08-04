@@ -22,7 +22,7 @@ dicionario = {'a':1, 'b':2, 'c':3, 'd':4}
 
 
 """
-# Exemplos
+# Exemplo 01
 """
 #
 # numeros = {'a':1, 'b':2, 'c':3, 'd':4, 'e':5}
@@ -33,7 +33,7 @@ dicionario = {'a':1, 'b':2, 'c':3, 'd':4}
 
 
 """
-# Exemplos
+# Exemplo 02
 """
 #
 # numeros = [1, 2, 3, 4, 5]
@@ -44,11 +44,22 @@ dicionario = {'a':1, 'b':2, 'c':3, 'd':4}
 
 
 """
-# Exemplos
+# Exemplo 03
+"""
+#
+# chaves = 'abcde'
+# valores = [1, 2, 3, 4, 5]
+#
+# mistura = {chaves[i]: valores[i] for i in range(0, len(chaves))}
+# print(mistura)
+
+
+"""
+# Exemplo com lógica condicional
 """
 
-chaves = 'abcde'
-valores = [1, 2, 3, 4, 5]
+numeros = [1, 2, 3, 4, 5]
 
-mistura = {chaves[i]: valores[i] for i in range(0, len(chaves))}
-print(mistura)
+res = {num: ('par' if num % 2 == 0 else 'impar') for num in numeros}
+print(res)
+
