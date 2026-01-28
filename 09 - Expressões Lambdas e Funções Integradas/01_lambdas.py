@@ -64,3 +64,7 @@ autores = ['Isaac Asimov', 'Ray Bradnury', 'Robert Heinlein',
            'Douglas Adamns', 'H. G. Wells','Leigh Brackett']
 
 print(autores)
+
+autores.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
+
+print(autores)
