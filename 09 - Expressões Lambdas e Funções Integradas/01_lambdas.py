@@ -33,5 +33,7 @@ def soma(a, b):
 # Podemos ter expressões lambidas com múltiplas entradas.
 """
 
-nome_completo = lambda nome, sobrenome: nome.strip().title() + ' ' + sobrenome.strip()title()
+nome_completo = lambda nome, sobrenome: nome.strip().title() + ' ' + sobrenome.strip().title()
 
+print(nome_completo(' angelina', 'JOLIE'))
+print(nome_completo(' FELICITY'         , ' jones '))
