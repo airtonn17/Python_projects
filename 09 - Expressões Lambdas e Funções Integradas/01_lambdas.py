@@ -16,3 +16,7 @@ def funcao(x):
 
 print(funcao(4))
 print(funcao(7))
+
+# Expressão Lambda
+lambda x: 3 * x + 1
+
