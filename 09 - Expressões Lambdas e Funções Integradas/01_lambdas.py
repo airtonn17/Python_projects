@@ -75,7 +75,7 @@ Outro Exemplo
 # f(x) = a * x ** 2 + b * x + c
 
 def geradora_funcao_quadratica(a, b, c):
-    """Retornma  a função f(x) = a*x**2 + b * x * + c"""
+    """Retorna a função f(x) = a*x**2 + b * x * + c"""
     return lambda x: a * x ** 2 + b * x + c
 
 teste = geradora_funcao_quadratica(2, 3, -5)
