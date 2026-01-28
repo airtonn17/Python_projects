@@ -42,14 +42,25 @@ def soma(a, b):
 """
 Em funções python podemos ter nenhuma ou várias entradas em lambdas também
 """
+#
+# amar = lambda: 'Como não amar Python? '
+# uma = lambda x: 3 * x + 1
+# duas = lambda x, y: (x * y) ** 0.5
+# tres = lambda x, y, z: 3 / (1 / x + 1/ y + 1 / z)
+# # n = lambda x1, x1, ..., xn, <expressão>
+#
+# print(amar())
+# print(uma(6))
+# print(duas(5, 7))
+# print(tres(3, 6, 9))
+#
+# # OBS: Se passarmos mais argumentos do que parâmetros esperados, teremos TypeError
 
-amar = lambda: 'Como não amar Python? '
-uma = lambda x: 3 * x + 1
-duas = lambda x, y: (x * y) ** 0.5
-tres = lambda x, y, z: 3 / (1 / x + 1/ y + 1 / z)
-# n = lambda x1, x1, ..., xn, <expressão>
+"""
+Outro Exemplo
+"""
+autores = ['Isaac Asimov', 'Ray Bradnury', 'Robert Heinlein',
+           'Arthur C. Clarke', 'Frank Herbert', 'Orson Scott Card',
+           'Douglas Adamns', 'H. G. Wells','Leigh Brackett']
 
-print(amar())
-print(uma(6))
-print(duas(5, 7))
-print(tres(3, 6, 9))
+print(autores)
