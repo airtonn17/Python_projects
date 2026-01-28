@@ -59,12 +59,29 @@ Em funções python podemos ter nenhuma ou várias entradas em lambdas também
 """
 Outro Exemplo
 """
-autores = ['Isaac Asimov', 'Ray Bradnury', 'Robert Heinlein',
-           'Arthur C. Clarke', 'Frank Herbert', 'Orson Scott Card',
-           'Douglas Adamns', 'H. G. Wells','Leigh Brackett']
+# autores = ['Isaac Asimov', 'Ray Bradnury', 'Robert Heinlein',
+#            'Arthur C. Clarke', 'Frank Herbert', 'Orson Scott Card',
+#            'Douglas Adamns', 'H. G. Wells','Leigh Brackett']
+#
+# print(autores)
+#
+# autores.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
+#
+# print(autores)
 
-print(autores)
+"""
+# Função Quadrática
+"""
+# f(x) = a * x ** 2 + b * x + c
 
-autores.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
+def geradora_funcao_quadratica(a, b, c):
+    """Retornma  a função f(x) = a*x**2 + b * x * + c"""
+    return lambda x: a * x ** 2 + b * x + c
 
-print(autores)
+teste = geradora_funcao_quadratica(2, 3, -5)
+
+print(teste(0))
+print(teste(1))
+print(teste(2))
+
+print(geradora_funcao_quadratica(3, 0, 1)(2))
