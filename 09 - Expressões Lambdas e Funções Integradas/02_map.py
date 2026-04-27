@@ -21,3 +21,6 @@ for r in raios:
     areas.append((area()))
 
 print(areas)
+
+# Forma 2 - Map
+
