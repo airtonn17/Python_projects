@@ -40,3 +40,17 @@ Parte 1
 # # Forma 3 - Map com Lambda
 # print(list(map(lambda r: math.pi * (r ** 2), raios)))
 # # OBS: Após utilizar a função MAP depois da primeira utilização do resultado, ele zera.
+
+# Para fixar - Map
+
+# Temos dados iteráveis:
+
+# dado: a1, a2, ... an
+
+# Temos uma função:
+
+# Função: f(x)
+
+# Utilizamos a função map(f, dados) onde map irá 'mapear' cada elemento dos dados e aplicar a função.
+
+# O Map Object: f(a1), f(a2), f(...), f(an)
