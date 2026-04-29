@@ -61,17 +61,16 @@ Parte 1
 """
 # Mais um Exemplo
 """
-
-cidades = [('Berlin', 29), ('Cairo', 36), ('BuenosAires', 19), ('Los Ageles', 26), ('Tokio', 27), ('Nova York', 28),
-           ('Londres', 27)]
-
-print(cidades)
-
-# f = 9/5 * c + 32
-
-# Lambda
-
-c_para_f = lambda dado: (dado[0], (9/5) * dado[1] + 32)
-
-print( list(map(c_para_f, cidades)))
-
+#
+# cidades = [('Berlin', 29), ('Cairo', 36), ('BuenosAires', 19), ('Los Ageles', 26), ('Tokio', 27), ('Nova York', 28),
+#            ('Londres', 27)]
+#
+# print(cidades)
+#
+# # f = 9/5 * c + 32
+#
+# # Lambda
+#
+# c_para_f = lambda dado: (dado[0], (9/5) * dado[1] + 32)
+#
+# print( list(map(c_para_f, cidades)))
