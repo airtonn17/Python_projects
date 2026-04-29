@@ -41,7 +41,10 @@ Parte 1
 # print(list(map(lambda r: math.pi * (r ** 2), raios)))
 # # OBS: Após utilizar a função MAP depois da primeira utilização do resultado, ele zera.
 
+
+"""
 # Para fixar - Map
+"""
 
 # Temos dados iteráveis:
 
@@ -54,3 +57,12 @@ Parte 1
 # Utilizamos a função map(f, dados) onde map irá 'mapear' cada elemento dos dados e aplicar a função.
 
 # O Map Object: f(a1), f(a2), f(...), f(an)
+
+"""
+# Mais um Exemplo
+"""
+
+cidades = [('Berlin', 29), ('Cairo', 36), ('BuenosAires', 19), ('Los Ageles', 26), ('Tokio', 27), ('Nova York', 28),
+           ('Londres', 27)]
+
+print(cidades)
